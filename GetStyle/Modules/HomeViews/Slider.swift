@@ -77,3 +77,8 @@ struct Slider_Previews: PreviewProvider {
         ContentView(viewRouter: ViewRouter())
     }
 }
+
+struct SliderModel: Identifiable {
+    var id = UUID().uuidString
+    var slideImage: String
+}

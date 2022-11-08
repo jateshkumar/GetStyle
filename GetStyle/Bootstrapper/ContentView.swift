@@ -35,6 +35,7 @@ struct ContentView: View {
                         .offset(y: geometry.size.height/8/8)
                 }
             }
+            .background(Color(hex: "f0f1f0"))
         }
     }
 }

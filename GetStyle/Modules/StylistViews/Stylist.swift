@@ -13,14 +13,19 @@ struct Stylist: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Stylist here")
-                ZStack(alignment: .bottom) {
-                    Color(.white)
-                        .ignoresSafeArea()
-                }
+                TopRatedStylist()
+                Spacer()
             }
+            .background(Color(hex: "f0f1f0"))
             .navigationTitle("Stylist")
             .navigationBarTitleDisplayMode(.large)
         }
+    }
+}
+
+
+struct Stylist_Previews: PreviewProvider {
+    static var previews: some View {
+        Stylist(viewRouter: ViewRouter())
     }
 }
